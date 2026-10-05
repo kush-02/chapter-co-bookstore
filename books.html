@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse books at Chapter & Co." />
+    <title>Chapter & Co. | Books</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  </head>
+  <body
+    class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100"
+  >
+    <header class="border-b border-stone-200 dark:border-stone-800">
+      <nav
+        class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
+        aria-label="Main navigation"
+      >
+        <a href="index.html" class="font-display text-2xl font-bold"
+          >Chapter & Co.</a
+        >
+        <div class="hidden items-center gap-6 md:flex">
+          <a
+            class="hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600"
+            href="index.html"
+            >Home</a
+          >
+          <a class="font-semibold text-amber-700" href="books.html">Books</a>
+          <a
+            class="hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600"
+            href="gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600"
+            href="contact.html"
+            >Contact</a
+          >
+         
+        </div>
+        <button
+          id="menuButton"
+          type="button"
+          class="rounded-lg border border-stone-300 px-3 py-2 md:hidden"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+      </nav>
+      <div
+        id="mobileMenu"
+        class="hidden border-t border-stone-200 px-6 py-4 dark:border-stone-800 md:hidden"
+      >
+        <div class="flex flex-col gap-4">
+          <a href="index.html">Home</a><a href="books.html">Books</a
+          ><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+          <button
+            id="mobileThemeButton"
+            type="button"
+            class="w-fit rounded-lg border border-stone-300 px-3 py-2 dark:border-stone-700"
+          >
+            Dark mode
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 py-16">
+        <p class="font-semibold uppercase tracking-widest text-amber-700">
+          Our collection
+        </p>
+        <h1 class="mt-2 font-display text-5xl font-bold">
+          Find your next book
+        </h1>
+        <p class="mt-4 max-w-2xl text-lg text-stone-600 dark:text-stone-300">
+          Explore fiction, non-fiction, self-development and classics.
+        </p>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=700&q=80"
+              alt="Stack of books"
+            />
+            <div class="p-6">
+              <p class="text-sm text-amber-700">Fiction</p>
+              <h2 class="mt-2 font-display text-2xl font-bold">
+                The Quiet Library
+              </h2>
+              <p class="mt-2 text-stone-600 dark:text-stone-300">
+                A peaceful story about books and unexpected friendships.
+              </p>
+              <p class="mt-4 font-bold">₹499</p>
+              <button
+                class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700"
+              >
+                View Book
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80"
+              alt="Open book on a table"
+            />
+            <div class="p-6">
+              <p class="text-sm text-amber-700">Lifestyle</p>
+              <h2 class="mt-2 font-display text-2xl font-bold">
+                Letters & Stories
+              </h2>
+              <p class="mt-2 text-stone-600 dark:text-stone-300">
+                Stories about people, places and the moments between them.
+              </p>
+              <p class="mt-4 font-bold">₹599</p>
+              <button
+                class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700"
+              >
+                View Book
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=80"
+              alt="Book beside a coffee cup"
+            />
+            <div class="p-6">
+              <p class="text-sm text-amber-700">Self Development</p>
+              <h2 class="mt-2 font-display text-2xl font-bold">
+                A Cup of Ideas
+              </h2>
+              <p class="mt-2 text-stone-600 dark:text-stone-300">
+                Small ideas for building better habits and a calmer life.
+              </p>
+              <p class="mt-4 font-bold">₹449</p>
+              <button
+                class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700"
+              >
+                View Book
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=700&q=80"
+              alt="Open book with reading glasses"
+            />
+            <div class="p-6">
+              <p class="text-sm text-amber-700">Classics</p>
+              <h2 class="mt-2 font-display text-2xl font-bold">Old Pages</h2>
+              <p class="mt-2 text-stone-600 dark:text-stone-300">
+                A collection inspired by timeless literature and classic
+                stories.
+              </p>
+              <p class="mt-4 font-bold">₹549</p>
+              <button
+                class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700"
+              >
+                View Book
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=700&q=80"
+              alt="Several books stacked together"
+            />
+            <div class="p-6">
+              <p class="text-sm text-amber-700">Non-Fiction</p>
+              <h2 class="mt-2 font-display text-2xl font-bold">
+                Curious Minds
+              </h2>
+              <p class="mt-2 text-stone-600 dark:text-stone-300">
+                Ideas and stories that make you look at the world differently.
+              </p>
+              <p class="mt-4 font-bold">₹649</p>
+              <button
+                class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700"
+              >
+                View Book
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="overflow-hidden rounded-xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900"
+          >
+            <img
+              class="h-72 w-full object-cover"
+              src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=700&q=80"
+              alt="Books arranged on a shelf"
+            />
+            <div class="p-6">
+              <p class="text-sm text-amber-700">Popular</p>
+              <h2 class="mt-2 font-display text-2xl font-bold">
+                The Reader's List
+              </h2>
+              <p class="mt-2 text-stone-600 dark:text-stone-300">
+                A selection of books recommended by our reading community.
+              </p>
+              <p class="mt-4 font-bold">₹699</p>
+              <button
+                class="mt-5 w-full rounded-lg bg-stone-900 px-4 py-3 text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700"
+              >
+                View Book
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-amber-100 py-14 dark:bg-stone-900">
+        <div class="mx-auto max-w-6xl px-6">
+          <h2 class="font-display text-3xl font-bold">Simple pricing</h2>
+          <div
+            class="mt-8 overflow-x-auto rounded-xl bg-white dark:bg-stone-800"
+          >
+            <table class="w-full min-w-[500px] text-left">
+              <caption class="sr-only">
+                Book categories and average prices
+              </caption>
+              <thead>
+                <tr class="border-b border-stone-200 dark:border-stone-700">
+                  <th class="p-4">Category</th>
+                  <th class="p-4">Starting Price</th>
+                  <th class="p-4">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-stone-200 dark:border-stone-700">
+                  <td class="p-4">Fiction</td>
+                  <td class="p-4">₹399</td>
+                  <td class="p-4">Relaxed reading</td>
+                </tr>
+                <tr class="border-b border-stone-200 dark:border-stone-700">
+                  <td class="p-4">Self Development</td>
+                  <td class="p-4">₹449</td>
+                  <td class="p-4">Personal growth</td>
+                </tr>
+                <tr>
+                  <td class="p-4">Classics</td>
+                  <td class="p-4">₹499</td>
+                  <td class="p-4">Literature lovers</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-stone-200 py-8 dark:border-stone-800">
+      <div
+        class="mx-auto max-w-6xl px-6 text-sm text-stone-600 dark:text-stone-400"
+      >
+        © 2026 Chapter & Co.
+      </div>
+    </footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

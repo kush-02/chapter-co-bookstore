@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Chapter & Co. bookstore.">
+  <title>Chapter & Co. | Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
+<header class="border-b border-stone-200 dark:border-stone-800">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main navigation">
+    <a href="index.html" class="font-display text-2xl font-bold">Chapter & Co.</a>
+    <div class="hidden items-center gap-6 md:flex">
+      <a class="hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600" href="index.html">Home</a>
+      <a class="hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600" href="books.html">Books</a>
+      <a class="hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600" href="gallery.html">Gallery</a>
+      <a class="font-semibold text-amber-700" href="contact.html">Contact</a>
+      
+    </div>
+    <button id="menuButton" type="button" class="rounded-lg border border-stone-300 px-3 py-2 md:hidden" aria-label="Open menu">Menu</button>
+  </nav>
+  <div id="mobileMenu" class="hidden border-t border-stone-200 px-6 py-4 dark:border-stone-800 md:hidden">
+    <div class="flex flex-col gap-4"><a href="index.html">Home</a><a href="books.html">Books</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <p class="font-semibold uppercase tracking-widest text-amber-700">Get in touch</p>
+    <h1 class="mt-2 font-display text-5xl font-bold">Contact us</h1>
+    <p class="mt-4 max-w-2xl text-lg text-stone-600 dark:text-stone-300">Ask about a book, visit our store or simply say hello.</p>
+
+    <div class="mt-12 grid gap-10 lg:grid-cols-2">
+      <form action="#" method="post" class="rounded-2xl bg-white p-6 shadow-sm dark:bg-stone-900 md:p-8">
+        <div class="grid gap-6">
+          <div>
+            <label for="name" class="mb-2 block font-semibold">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required class="w-full rounded-lg border border-stone-300 bg-transparent px-4 py-3 outline-none focus:border-amber-700 focus:ring-2 focus:ring-amber-200 dark:border-stone-700" placeholder="Your name">
+          </div>
+
+          <div>
+            <label for="phone" class="mb-2 block font-semibold">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required class="w-full rounded-lg border border-stone-300 bg-transparent px-4 py-3 outline-none focus:border-amber-700 focus:ring-2 focus:ring-amber-200 dark:border-stone-700" placeholder="+91 98765 43210">
+          </div>
+
+          <div>
+            <label for="email" class="mb-2 block font-semibold">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-lg border border-stone-300 bg-transparent px-4 py-3 outline-none focus:border-amber-700 focus:ring-2 focus:ring-amber-200 dark:border-stone-700" placeholder="you@example.com">
+          </div>
+
+          <div>
+            <label for="service" class="mb-2 block font-semibold">What can we help with?</label>
+            <select id="service" name="service" required class="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 outline-none focus:border-amber-700 focus:ring-2 focus:ring-amber-200 dark:border-stone-700 dark:bg-stone-900">
+              <option value="">Choose an option</option>
+              <option value="book">Book availability</option>
+              <option value="recommendation">Book recommendation</option>
+              <option value="event">Reading event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="mb-2 block font-semibold">Message</label>
+            <textarea id="message" name="message" rows="5" required class="w-full rounded-lg border border-stone-300 bg-transparent px-4 py-3 outline-none focus:border-amber-700 focus:ring-2 focus:ring-amber-200 dark:border-stone-700" placeholder="Write your message"></textarea>
+          </div>
+
+          <button type="submit" class="rounded-lg bg-stone-900 px-6 py-3 font-semibold text-white hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-amber-600 dark:bg-amber-700 dark:hover:bg-amber-600">Send Message</button>
+        </div>
+      </form>
+
+      <div class="space-y-8">
+        <section>
+          <h2 class="font-display text-3xl font-bold">Visit our store</h2>
+          <address class="mt-4 not-italic leading-8 text-stone-600 dark:text-stone-300">
+            24 Book Street, C-Scheme<br>
+            Jaipur, Rajasthan 302001<br>
+            India
+          </address>
+        </section>
+
+        <section>
+          <h2 class="font-display text-3xl font-bold">Business hours</h2>
+          <ul class="mt-4 space-y-2 text-stone-600 dark:text-stone-300">
+            <li>Monday – Friday: 10:00 AM – 8:00 PM</li>
+            <li>Saturday: 10:00 AM – 9:00 PM</li>
+            <li>Sunday: 11:00 AM – 6:00 PM</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-stone-200 py-8 dark:border-stone-800">
+  <div class="mx-auto max-w-6xl px-6 text-sm text-stone-600 dark:text-stone-400">© 2026 Chapter & Co.</div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

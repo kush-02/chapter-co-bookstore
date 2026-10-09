@@ -46,3 +46,5 @@ No build tool is required for this beginner version.
 ## Deployment
 
 This is a static website and can be deployed using Vercel .
+
+Live URL : https://chapter-co-bookstore-two.vercel.app/
